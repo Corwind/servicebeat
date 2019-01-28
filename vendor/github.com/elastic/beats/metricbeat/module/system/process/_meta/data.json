@@ -1,0 +1,47 @@
+{
+    "@timestamp": "2017-10-12T08:05:34.853Z",
+    "agent": {
+        "hostname": "host.example.com",
+        "name": "host.example.com"
+    },
+    "event": {
+        "dataset": "system.process",
+        "duration": 115000,
+        "module": "system"
+    },
+    "metricset": {
+        "name": "process"
+    },
+    "service": {
+        "type": "system"
+    },
+    "system": {
+        "process": {
+            "cmdline": "/var/folders/k3/xlwbcsmj6dd7vjv2tg1d7c_40000gn/T/go-build019306533/b001/process.test -data",
+            "cpu": {
+                "start_time": "2019-01-23T13:12:46.639Z",
+                "total": {
+                    "norm": {
+                        "pct": 0.0087
+                    },
+                    "pct": 0.0692,
+                    "value": 239
+                }
+            },
+            "memory": {
+                "rss": {
+                    "bytes": 49573888,
+                    "pct": 0.0029
+                },
+                "share": 0,
+                "size": 4515098624
+            },
+            "name": "process.test",
+            "pgid": 40547,
+            "pid": 40583,
+            "ppid": 40547,
+            "state": "running",
+            "username": "ruflin"
+        }
+    }
+}

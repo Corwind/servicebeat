@@ -1,0 +1,5 @@
+= Servicebeat Docs
+
+Welcome to the Servicebeat documentation.
+
+

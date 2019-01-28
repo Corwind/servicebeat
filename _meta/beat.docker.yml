@@ -1,0 +1,2 @@
+servicebeat:
+  period: 1s
