@@ -2,8 +2,18 @@
   title: servicebeat
   description:
   fields:
-    - name: counter
-      type: long
+    - name: command
+      type: string
       required: true
       description: >
-        PLEASE UPDATE DOCUMENTATION
+        The command to run that checks service status
+    - name: services
+      type: list
+      required: true
+      description: >
+        The list of services to check
+    - name: regex
+      type: string
+      required: true
+      description: >
+        The regex to match the output of the command

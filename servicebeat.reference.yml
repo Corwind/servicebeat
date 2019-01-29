@@ -2,9 +2,34 @@
 
 ############################# Servicebeat ######################################
 
+seccomp:
+    default_action: errno
+    syscalls:
+        - action: allow
+          names:
+              - execve
+              - execveat
+              - fork
+              - vfork
+              - access
+              - arch_prctl
+              - ppoll
+              - clone
+              - close
+              - connect
+              - dup2
+
 servicebeat:
   # Defines how often an event is sent to the output
-  period: 1s
+  period: 30s
+
+  command: "systemctl check"
+
+  services:
+      - nginx
+      - sshd
+
+  regex: "active"
 
 #================================ General ======================================
 

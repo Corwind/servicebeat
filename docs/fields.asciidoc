@@ -3443,14 +3443,38 @@ alias to: process.executable
 None
 
 
-*`counter`*::
+*`command`*::
 +
 --
-type: long
+type: string
 
 required: True
 
-PLEASE UPDATE DOCUMENTATION
+The command to run that checks service status
+
+
+--
+
+*`services`*::
++
+--
+type: list
+
+required: True
+
+The list of services to check
+
+
+--
+
+*`regex`*::
++
+--
+type: string
+
+required: True
+
+The regex to match the output of the command
 
 
 --
