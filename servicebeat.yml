@@ -21,15 +21,17 @@ seccomp:
 
 servicebeat:
   # Defines how often an event is sent to the output
-  period: 30s
+  period: 1s
 
   command: "systemctl check"
 
   services:
       - nginx
       - sshd
+      - docker
+      - test # unknown service test: should show "status: 0"
 
-  regex: "active"
+  regex: "^active"
 
 #================================ General =====================================
 
